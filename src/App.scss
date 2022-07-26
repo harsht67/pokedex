@@ -1,0 +1,27 @@
+.app {
+    padding: 2rem 5rem;
+
+    header {
+        display: flex;
+        gap: 5rem;
+    }
+
+    main {
+        margin-block: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2.5rem 0;
+
+        > * {
+            width: 22.5%;
+        }
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
