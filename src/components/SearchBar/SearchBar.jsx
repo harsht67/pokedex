@@ -3,25 +3,25 @@ import './SearchBar.scss'
 import { BiSearch } from 'react-icons/bi'
 import { useState } from 'react'
 
-function SearchBar() {
+function SearchBar(props) {
 
-    const [data, setData] = useState('')
-
-    // updates form(search) field
     const changeHandler = (e) => {
-        setData(e.target.value)
+        props.changeHandler(e.target.value)
     }
 
     return (
         <article className="searchBar">
 
-            <BiSearch className="icon" />
+            <BiSearch 
+                className="icon"
+                onClick={() => props.searchFunc()}
+            />
 
             <input
                 type="text"
                 placeholder="Pikachu"
                 name="data"
-                value={data}
+                value={props.data}
                 onChange={changeHandler}
             />
 

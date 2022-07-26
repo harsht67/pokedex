@@ -11,7 +11,7 @@ function Card(props) {
     const [modal, setModal] = useState(false)
 
     useEffect(() => {
-        
+
         axios   
             .get(props.data.url)
             .then(res => setData(res.data))

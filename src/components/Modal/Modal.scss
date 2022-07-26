@@ -12,6 +12,9 @@
 
     header {
         margin-block-end: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .modal__title {
             text-transform: uppercase;
